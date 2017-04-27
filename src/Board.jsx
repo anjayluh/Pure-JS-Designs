@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import Square from './index.js';
 
-class Board extends React.Component {
+export default class Board extends React.Component {
   renderSquare(i) {
     return <Square value={i} />;
   }
