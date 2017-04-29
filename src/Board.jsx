@@ -4,6 +4,7 @@ import Square from './Square.jsx';
 
 export default class Board extends React.Component {
   renderSquare(i) {
+    this.setState = ({ value: i });
     return <Square value={i} />;
   }
   render() {

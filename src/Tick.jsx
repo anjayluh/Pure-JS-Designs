@@ -3,7 +3,7 @@ import React from 'react';
 export default function Tick() {
   const timer = (
     <div>
-        The time taken is {new Date().toLocaleDateString()}
+        The time taken is {new Date().toLocaleTimeString()}
       <br />
     </div>
     );
