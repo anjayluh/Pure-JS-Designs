@@ -1,17 +1,18 @@
 import React from 'react';
-import '../src/App.css';
+import '../App.css';
 import Post from './Post.jsx';
 
 function App(props) {
   return (
     <div className="facebook">
       <div className="toolbar">
-        <img src="download.jpg" className="photo" alt="profile" />
         <Post />
       </div>
-      <p className="comment">
-        Comments here.
+      <div>
+        <p className="comment">
+        Likes Comments
       </p>
+      </div>
     </div>
   );
 }

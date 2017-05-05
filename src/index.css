@@ -6,7 +6,7 @@ body {
 }
 .facebook {
     width: 700px;
-    height: 300px;
+    height: 450px;
     background-color: #A9A9A9;
 
     position: absolute;
@@ -15,5 +15,13 @@ body {
     right: 0;
     color: blue;
     margin: auto;
-
+}
+#myPost {
+  width: 500px;
+  height: 300px;
+  /*border: */
+}
+$profilePhoto {
+  width: 200;
+  height: 150;
 }
