@@ -21,7 +21,7 @@ body {
   height: 300px;
   /*border: */
 }
-$profilePhoto {
+#profilePhoto {
   width: 200;
   height: 150;
 }
