@@ -1,29 +1,27 @@
 import React from 'react';
 import '../index.css';
+import profilePhoto from '../images/NBC-news.png';
+import myPost from '../images/teen-reporters.jpg';
 
 function Post() {
-  const profilePhoto = 'download.jpg';
-  const userName = 'ENews!';
-  const message = 'North Korea state media slams China; suggests Trump is ignorant';
-  const myPost = 'images.jpg';
-  const datePosted = new Date().toLocaleDateString();
-  const timePosted = new Date().toLocaleTimeString();
+  // const profilePhoto = '../images/download.jpg';
+  // const userName = '';
+  const title = 'In LA’s Boyle Heights, Latino Teens Draw National Praise for Community Journalism';
+  // const myPost = '../images/images.jpg';
+  const datePosted = '27 mins';
+  // const timePosted = new Date().toLocaleTimeString();
   // likes: '',
   // comments: '',
   return (
-    <div id="posts">
-      <p>
-        <img src="(./images + {profilePhoto})" id="profilePhoto" alt="profilePhoto" />
-        &nbsp; {userName}
-      </p>
-      <ul>{message}
-      </ul>
-      <img src="(./images + {this.myPost})" id="myPost" alt="myPost" />
-      <div>
-        {datePosted}
-        &nbsp; &nbsp;
-        {timePosted}
-      </div>
+    <div className="container">
+      <h5 className="subPageTitle">
+        <img src={profilePhoto} className="profilePicture" alt="profilePicture" />
+        &nbsp;
+        <span className="userName">NBC News <span className="live">is live now.</span> </span>
+        <div className="postDate"> {datePosted}</div>
+      </h5>
+      <p className="postTitle">{title}</p>
+      <img src={myPost} id="myPost" alt="myPost" />
     </div>
   );
 }

@@ -8,11 +8,6 @@ function App(props) {
       <div className="toolbar">
         <Post />
       </div>
-      <div>
-        <p className="comment">
-        Likes Comments
-      </p>
-      </div>
     </div>
   );
 }
